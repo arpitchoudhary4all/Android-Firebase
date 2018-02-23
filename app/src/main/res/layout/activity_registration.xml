@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.owner.myapplication.MainActivity"
+    android:background="@android:color/black"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="famous"
+        android:textSize="75dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelUsername"
+        android:layout_below="@+id/title"
+        android:text="  Username"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_margin="3dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Username"
+        android:layout_below="@+id/labelUsername"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_margin="3dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelEmail"
+        android:layout_below="@+id/Username"
+        android:text="  E Mail"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_margin="3dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Email"
+        android:layout_below="@+id/labelEmail"
+        android:textColor="@android:color/white"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_margin="3dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelUserpwd"
+        android:layout_below="@+id/Email"
+        android:text="  Password"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_margin="3dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Userpwd"
+        android:layout_below="@+id/labelUserpwd"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_margin="3dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:layout_below="@+id/Userpwd"
+        android:text="Register"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/User"
+        android:layout_below="@+id/btnRegister"
+        android:text="EXISTING USER"
+        android:textSize="15dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:background="@android:color/transparent"
+        android:layout_margin="10dp"
+        />
+</RelativeLayout>
+
+

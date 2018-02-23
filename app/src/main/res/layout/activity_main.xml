@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.owner.myapplication.MainActivity"
+    android:background="@android:color/black"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:text="famous"
+        android:textSize="75dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelid"
+        android:layout_below="@+id/title"
+        android:text="  User-Id"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_margin="8dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id"
+        android:layout_below="@+id/labelid"
+        android:textColor="@android:color/white"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/labelpwd"
+        android:layout_below="@+id/id"
+        android:text="  Password"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_margin="8dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@+id/labelpwd"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/error"
+        android:layout_below="@+id/password"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_margin="2dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/error"
+        android:text="Login in"
+        android:textSize="22dp"
+        android:textAllCaps="true"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNewuser"
+        android:text="NOT A USER YET ? BE ONE"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/btnLogin"
+        android:layout_alignEnd="@+id/error" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnForgot"
+        android:layout_below="@+id/btnNewuser"
+        android:text="FORGOT PASSWORD"
+        android:textSize="14dp"
+        android:textColor="@android:color/holo_blue_bright"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        />
+</RelativeLayout>
